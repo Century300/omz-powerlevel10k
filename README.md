@@ -1,5 +1,5 @@
 # Install oh-my-zsh, custom .zshrc, powerlevel10k theme
-These are 2 bash scripts to fast install oh-my-zsh and the custom ~/.zshrc file to a host machine.
+These are 2 bash scripts to fast install some packages to a host machine.
 
 I used these scripts to install oh-my-zsh, my .zshrc configuration, and powerlevel10k theme to the Ubuntu & Kali (Linux) machines on TryHackMe.com, I have not tested the scripts with other machines yet.
 
