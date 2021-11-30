@@ -10,7 +10,7 @@ case "${unameOut}" in
   *)          MACHINE="UNKNOWN:${unameOut}"
 esac
 
-echo "Your machine is" __$MACHINE'''__, I used these scripts to install oh-my-zsh, ~/.zshrc configuration, and powerlevel10k theme to the Ubuntu & Kali (Linux) machines on TryHackMe.com, I have not tested the scripts with other machines yet.  You might want to run "sudo apt upgrade -y" after running this 2nd bash script, but it might take a long time to upgrade all packages.'''
+echo "Your machine is __"$MACHINE'''__, I used these scripts to install oh-my-zsh, ~/.zshrc configuration, and powerlevel10k theme to the Ubuntu & Kali (Linux) machines on TryHackMe.com, I have not tested the scripts with other machines yet.  You might want to run "sudo apt upgrade -y" after running this 2nd bash script, but it might take a long time to upgrade all packages.'''
 
 # Assumes default ZSH installation
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
@@ -28,6 +28,11 @@ sudo apt install -y zsh-syntax-highlighting autojump
 
 # Clone the powerlevel10k repository to oh-my-zsh directory
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# Copy Meslo fonts .ttf files into local fonts directory and refresh fonts cache
+mkdir -p ~/.local/share/fonts
+cp ~/Downloads/powerlevel10k/Meslo_Font/*ttf ~/.local/share/fonts
+fc-cache -f -v
 
 # Replace the OMZ default $HOME/.zshrc file with this .zshrc content
 echo '''
