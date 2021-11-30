@@ -4,7 +4,7 @@ These are 2 bash scripts to fast install some packages to a host machine.
 I used these scripts to install oh-my-zsh, my .zshrc configuration, and powerlevel10k theme to the Ubuntu & Kali (Linux) machines on TryHackMe.com, I have not tested the scripts with other machines yet.
 
 ### My .zshrc configuration
-- Theme: powerlevel10k/powerlevel10k (you might want to use the official powerlevel10k supported fonts [MesloLGS](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)).
+- Theme: powerlevel10k/powerlevel10k (including the official supported fonts [MesloLGS](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)).
 - Plugins used from $HOME/.oh-my-zsh/plugins/: git sudo web-search dirhistory history jsontools colored-man-pages command-not-found autojump
 - Added custom plugins in $HOME/.oh-my-zsh/custom/plugins/: zsh-autosuggestions k zsh-syntax-highlighting
 
