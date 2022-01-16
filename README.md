@@ -9,11 +9,20 @@ I used these scripts to install oh-my-zsh, my .zshrc configuration, and powerlev
 - Added custom plugins in $HOME/.oh-my-zsh/custom/plugins/: zsh-autosuggestions k zsh-syntax-highlighting
 
 ## Instructions
-- git clone https://github.com/Century300/omz-powerlevel10k.git ~/Downloads/omz-powerlevel10k (require this path to install Meslo Fonts properly)
-- cd ~/Downloads/omz-powerlevel10k
-- sudo chmod +x install*
-- ./install_zsh_part1.sh
-- _(type Y when you see "Do you want to change your default shell to zsh?")_
-- ./install_zsh_part2.sh
-- source ~/.zshrc
-- sudo rm -rf ~/Downloads/omz-powerlevel10k
+- Clone the repo to ~/Downloads/omz-powerlevel10k to install Meslo Fonts properly
+```bash
+git clone https://github.com/Century300/omz-powerlevel10k.git ~/Downloads/omz-powerlevel10k && cd ~/Downloads/omz-powerlevel10k && sudo chmod +x install*
+```
+- Intall part 1, type "Y" when you see "_Do you want to change your default shell to zsh?_"
+```
+./install_zsh_part1.sh
+```
+- Install part 2
+```bash
+./install_zsh_part2.sh
+```
+- Source the .zshrc file and remove the cloned repo
+```bash
+source ~/.zshrc
+sudo rm -rf ~/Downloads/omz-powerlevel10k
+```
